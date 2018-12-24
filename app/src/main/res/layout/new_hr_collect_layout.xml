@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/bg_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/include_id"
+        layout="@layout/header_layout"/>
+
+    <ListView
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_above="@+id/rl"
+        android:layout_below="@+id/include_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ls"
+        android:dividerHeight="@dimen/space_10"
+        android:divider="@color/bg_all"
+        ></ListView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:background="@color/text_white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_divider_1"
+            android:background="@color/text_gray"/>
+
+        <RelativeLayout
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+        <TextView
+            android:textColor="@color/blue_light"
+            android:textSize="@dimen/text_size_16"
+            android:gravity="center"
+            android:text="+  创建新的文件夹"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/tv_add_new_collect"
+            />
+
+            <TextView
+                android:visibility="gone"
+                android:background="@color/text_blue_new"
+                android:textColor="@color/text_white"
+                android:textSize="@dimen/text_size_16"
+                android:gravity="center"
+                android:text="删除"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/tv_add_new_delete"
+                />
+
+    </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

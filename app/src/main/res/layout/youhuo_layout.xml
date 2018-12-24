@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_all"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <TextView
+        android:id="@+id/tv_nnnn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择职位诱惑，提升职位吸引力，有效增加职位投递"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/space_10"
+        android:textSize="@dimen/text_size_13"
+        android:textColor="@color/text_gray"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        >
+        <View
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_divider_1"
+            android:background="@color/text_light_gray"/>
+        <TextView
+            android:paddingTop="@dimen/space_2"
+            android:paddingBottom="@dimen/space_2"
+            android:background="@drawable/select_label_bg"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="最多可选8个标签"
+            android:textSize="@dimen/text_size_13"
+            android:textColor="@color/text_white"
+            android:paddingLeft="@dimen/space_15"
+            android:paddingRight="@dimen/space_15"
+            />
+        <View
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/space_divider_1"
+            android:background="@color/text_light_gray"/>
+    </LinearLayout>
+
+
+    <com.donkingliang.labels.LabelsView
+        android:layout_marginTop="@dimen/space_20"
+        android:paddingBottom="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_13"
+        android:id="@+id/labelView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:labelBackground="@drawable/label_bg3"
+        app:labelTextColor="@drawable/label_text_color3"
+        app:labelTextSize="12sp"
+        app:labelTextPaddingBottom="5dp"
+        app:labelTextPaddingLeft="10dp"
+        app:labelTextPaddingRight="10dp"
+        app:labelTextPaddingTop="5dp"
+        app:lineMargin="10dp"
+        app:wordMargin="10dp"
+        app:selectType="MULTI"
+        app:maxSelect="8"
+        >
+
+    </com.donkingliang.labels.LabelsView>
+
+</LinearLayout>

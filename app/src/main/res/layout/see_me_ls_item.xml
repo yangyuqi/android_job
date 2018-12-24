@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:background="@mipmap/groweup"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_marginLeft="15dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            />
+
+        <RelativeLayout
+            android:paddingRight="@dimen/space_10"
+            android:layout_marginTop="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_toRightOf="@+id/iv_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:textColor="@color/text_normal_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="浙江优正浙江优正浙江优正浙江优正"
+                android:textSize="@dimen/text_size_14"
+                />
+
+            <TextView
+                android:singleLine="true"
+                android:id="@+id/tv_indu"
+                android:layout_marginTop="@dimen/space_5"
+                android:textSize="@dimen/text_size_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:textColor="@color/text_gray"
+                android:text="发快递发快递发快递发快递发快递"
+                />
+
+            <TextView
+                android:layout_marginLeft="@dimen/space_10"
+                android:singleLine="true"
+                android:layout_toRightOf="@+id/tv_indu"
+                android:id="@+id/tv_time"
+                android:layout_marginTop="@dimen/space_5"
+                android:textSize="@dimen/text_size_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_name"
+                android:textColor="@color/text_gray"
+                android:text="发快递发快递发快递发快递发快递"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

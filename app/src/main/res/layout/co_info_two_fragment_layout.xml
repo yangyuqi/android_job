@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/text_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_marginTop="@dimen/space_8"
+        android:layout_marginLeft="@dimen/space_15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="企业认证"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/text_black"
+        android:drawableLeft="@mipmap/renzheng"
+        android:gravity="center_vertical"
+        android:drawablePadding="@dimen/space_5"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginTop="@dimen/space_5"
+        android:src="@mipmap/xian"
+        />
+    <TextView
+        android:textColor="#666666"
+        android:textSize="@dimen/text_size_18"
+        android:text="请上传营业执照"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+    
+    <ImageView
+        android:scaleType="fitXY"
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@mipmap/yingyezhizhao"
+        />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl4"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/anniu"
+        android:scaleType="fitXY"
+        android:text="完成"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

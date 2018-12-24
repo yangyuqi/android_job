@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp">
+                <com.jude.rollviewpager.RollPagerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/roll_view"
+                    >
+                </com.jude.rollviewpager.RollPagerView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:background="@color/text_white"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/tv_yinjie"
+                    android:drawableTop="@mipmap/yingjiesheng"
+                    style="@style/text_style"
+                    android:text="应届生专区"
+                    />
+                <TextView
+                    android:id="@+id/tv_shixi"
+                    android:drawableTop="@mipmap/shixisheng"
+                    android:text="实习生专区"
+                    style="@style/text_style"
+                    />
+                <TextView
+                    android:id="@+id/tv_jianzhi"
+                    android:drawableTop="@mipmap/jianzhizhuanqu"
+                    android:text="兼职专区"
+                    style="@style/text_style"
+                    />
+                <TextView
+                    android:id="@+id/tv_xuanjianghui"
+                    android:drawableTop="@mipmap/xuanjianghui44"
+                    android:text="最新宣讲会"
+                    style="@style/text_style"
+                    />
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_console"
+                    android:drawableTop="@mipmap/qiuzhizixun"
+                    android:text="政府公告"
+                    style="@style/text_style"
+                    />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:background="@color/text_white"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="3dp"
+                    android:layout_height="@dimen/space_13"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:background="#ED2A2E" />
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_toRightOf="@+id/view"
+                    android:text="应届生专区"
+                    android:textColor="#555555"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    android:paddingLeft="@dimen/space_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/space_10"
+                    android:text=">>"
+                    android:textColor="#9A9A9A" />
+
+            </RelativeLayout>
+
+
+            <com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView
+                android:divider="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ls"
+                ></com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView>
+
+            <RelativeLayout
+                android:background="@color/text_white"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="3dp"
+                    android:layout_height="@dimen/space_13"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:background="#ED2A2E" />
+
+                <TextView
+                    android:id="@+id/tv_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_toRightOf="@+id/view1"
+                    android:text="实习生专区"
+                    android:textColor="#555555"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:paddingLeft="@dimen/space_20"
+                    android:id="@+id/tv_more2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/space_10"
+                    android:text=">>"
+                    android:textColor="#9A9A9A" />
+
+            </RelativeLayout>
+
+
+            <com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView
+                android:divider="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ls_two"
+                ></com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView>
+
+            <RelativeLayout
+                android:background="@color/text_white"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <View
+                    android:id="@+id/view4"
+                    android:layout_width="3dp"
+                    android:layout_height="@dimen/space_13"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:background="#ED2A2E" />
+
+                <TextView
+                    android:id="@+id/tv_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_toRightOf="@+id/view4"
+                    android:text="兼职"
+                    android:textColor="#555555"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:paddingLeft="@dimen/space_20"
+                    android:id="@+id/tv_more4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/space_10"
+                    android:text=">>"
+                    android:textColor="#9A9A9A" />
+
+            </RelativeLayout>
+
+
+            <com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView
+                android:divider="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ls_four"
+                ></com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView>
+
+
+            <RelativeLayout
+                android:background="@color/text_white"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="3dp"
+                    android:layout_height="@dimen/space_13"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:background="#ED2A2E" />
+
+                <TextView
+                    android:id="@+id/tv_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_toRightOf="@+id/view2"
+                    android:text="最新宣讲会"
+                    android:textColor="#555555"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:id="@+id/tv_more3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/space_10"
+                    android:text=">>"
+                    android:textColor="#9A9A9A" />
+
+            </RelativeLayout>
+
+
+            <com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView
+                android:layout_marginTop="@dimen/space_3"
+                android:divider="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ls_three"
+                ></com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView>
+
+
+            <RelativeLayout
+                android:visibility="gone"
+                android:background="@color/text_white"
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp">
+
+                <View
+                    android:id="@+id/view5"
+                    android:layout_width="3dp"
+                    android:layout_height="@dimen/space_13"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:background="#ED2A2E" />
+
+                <TextView
+                    android:id="@+id/tv_name5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_toRightOf="@+id/view5"
+                    android:text="职场干货"
+                    android:textColor="#555555"
+                    android:textSize="@dimen/text_size_14" />
+
+                <TextView
+                    android:paddingLeft="@dimen/space_20"
+                    android:id="@+id/tv_more5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:paddingRight="@dimen/space_10"
+                    android:text=">>"
+                    android:textColor="#9A9A9A" />
+
+            </RelativeLayout>
+
+
+            <com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/space_5"
+                android:divider="@null"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ls_five"
+                ></com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

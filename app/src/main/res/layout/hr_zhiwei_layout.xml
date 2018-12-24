@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/text_white"
+        app:tabTextColor="@color/text_gray"
+        app:tabSelectedTextColor="@color/text_blue_new"
+        app:tabIndicatorColor="@color/text_blue_new"
+        app:tabTextAppearance="@style/text_white_11"
+        app:tabMode="fixed"
+        >
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部"
+            />
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布中"
+            />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已入职"
+            />
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已撤销"
+            />
+
+    </android.support.design.widget.TabLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <com.liaoinstan.springview.widget.SpringView
+        android:layout_marginTop="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:type="follow"
+        android:id="@+id/sv"
+        app:footer="@layout/default_footer"
+        app:header="@layout/default_header"
+        >
+
+        <ListView
+            android:scrollbars="none"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:id="@+id/ls"
+            ></ListView>
+</com.liaoinstan.springview.widget.SpringView>
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/iv_fabu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/republish_job_bg"
+            android:layout_margin="@dimen/space_30"
+            />
+
+    </RelativeLayout>
+</LinearLayout>

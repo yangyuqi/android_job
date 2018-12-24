@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/view_"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_"/>
+
+    <LinearLayout
+        android:id="@+id/ll_"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:background="@color/text_white"
+        >
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/space_10"
+        android:paddingBottom="@dimen/space_20"
+        android:text="分享到"
+        android:gravity="center"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:id="@+id/tv_wx_friend"
+                android:paddingTop="@dimen/space_30"
+                android:text="朋友圈"
+                android:gravity="center"
+                android:drawableTop="@mipmap/pengyouquan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tv_wx"
+                android:paddingTop="30dp"
+                android:text="微信好友"
+                android:drawableTop="@mipmap/weixin"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:id="@+id/tv_weibo"
+                android:paddingTop="@dimen/space_30"
+                android:text="微博"
+                android:gravity="center"
+                android:drawableTop="@mipmap/qqkongjian"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+</LinearLayout>
+</RelativeLayout>

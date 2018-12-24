@@ -1,0 +1,112 @@
+apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.youzheng.tongxiang.huntingjob"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "4.5.1"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库（不需要的删除即可）。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a', 'x86', 'x86_64', 'mips', 'mips64'
+        }
+
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "e5f94aaf4355beaf66324f07", //JPush上注册的包名对应的appkey（*换成你的*）
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    android {
+        sourceSets.main {
+            jniLibs.srcDir "libs"
+        }
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    //    compile 'com.android.support:appcompat-v7:26.+'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    testCompile 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.4.0'
+    apt 'com.jakewharton:butterknife-compiler:8.4.0'
+    compile 'com.google.dagger:dagger:2.6'
+    compile 'com.liaoinstan.springview:library:1.2.6'
+    compile 'com.jude:rollviewpager:1.4.6'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'org.greenrobot:eventbus:3.0.0'
+    //    compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.github.donkingliang:LabelsView:1.2.0'
+    compile 'com.squareup.okhttp:okhttp:2.0.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    //    compile 'com.github.codbking:PickTime:v1.0.1'
+    compile 'com.contrarywind:Android-PickerView:3.2.5'
+    compile 'com.tbruyelle.rxpermissions:rxpermissions:0.9.4@aar'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:1.0.1'
+    compile 'org.jsoup:jsoup:1.10.3'
+    compile 'me.iwf.photopicker:PhotoPicker:0.9.0@aar'
+    compile files('libs/Amap_2DMap_V5.2.0_20170627.jar')
+    compile 'com.amap.api:search:latest.integration'
+    compile 'com.amap.api:location:latest.integration'
+    compile 'com.tencent.mm.opensdk:wechat-sdk-android-without-mta:+'
+    compile 'com.feezu.liuli:timeselector:1.1.3+'
+    configurations {
+        all*.exclude group: 'com.android.support', module: 'support-v13'
+    }
+    compile(name: 'AliyunSdk-RC', ext: 'aar')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:design:24.2.1'
+    compile 'com.google.code.findbugs:jsr305:3.0.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'pub.devrel:easypermissions:0.2.1'
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.github.bumptech.glide:okhttp3-integration:1.4.0@aar'
+    compile 'com.squareup.okio:okio:1.12.0'
+    compile 'com.google.code.gson:gson:2.8.0'
+    //    compile 'fm.jiecao:jiecaovideoplayer:4.6.4'
+    compile 'cn.jzvd:jiaozivideoplayer:6.2.9'
+    compile(name: 'AlivcPlayer-3.4.7', ext: 'aar')
+    compile(name: 'AlivcReporter-1.2', ext: 'aar')
+    compile 'com.aliyun.dpa:oss-android-sdk:+'
+    compile 'com.android.support:multidex:1.0.0'
+    compile files('libs/AlivcCore.jar')
+    compile 'com.android.support:recyclerview-v7:24.2.1'
+    compile 'com.umeng.umsdk:analytics:7.5.4'
+    compile 'com.umeng.umsdk:common:1.5.4'
+    compile files('libs/jcore-android-1.2.6.jar')
+    compile files('libs/jpush-android-3.1.8.jar')
+}

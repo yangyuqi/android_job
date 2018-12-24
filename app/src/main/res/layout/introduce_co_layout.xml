@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_all"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:background="@color/bg_all"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+    <RelativeLayout
+        android:background="@color/text_white"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+
+    <RelativeLayout
+        android:background="@color/text_blue_new"
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/fanhui"
+            android:padding="@dimen/space_15"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/text_size_17"
+            android:text="公司信息"
+            android:padding="@dimen/space_15"
+            android:textColor="@color/text_white"
+            />
+
+
+    </RelativeLayout>
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_marginLeft="@dimen/space_30"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignParentBottom="true"
+            android:src="@mipmap/gongsixinxi"
+            />
+</RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/text_white"
+        android:id="@+id/ll_name"
+        android:paddingLeft="@dimen/space_20"
+        android:layout_toRightOf="@+id/iv_co_icon"
+        android:layout_width="match_parent"
+        android:layout_height="35dp">
+
+        <TextView
+            android:id="@+id/tv_co_name"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="南京公司"
+            android:textColor="@color/text_main_gray"
+            android:textSize="@dimen/text_size_15"
+            />
+        <TextView
+            android:paddingBottom="@dimen/space_2"
+            android:paddingTop="@dimen/space_2"
+            android:paddingRight="@dimen/space_8"
+            android:paddingLeft="@dimen/space_8"
+            android:textColor="@color/text_white"
+            android:background="@mipmap/dodo_attention"
+            android:text="已认证"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_11"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="@dimen/space_5"
+        android:paddingTop="@dimen/space_5"
+        android:background="@color/text_white"
+        android:id="@+id/ll_name_2"
+        android:paddingLeft="@dimen/space_20"
+        android:layout_below="@+id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_co_icon"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_ctype"
+            android:drawablePadding="@dimen/space_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="民营企业"
+            android:textSize="@dimen/text_size_10"
+            android:drawableLeft="@mipmap/dodo_type"
+            />
+
+        <TextView
+            android:id="@+id/tv_co_num"
+            android:drawablePadding="@dimen/space_2"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="少于50"
+            android:textSize="@dimen/text_size_10"
+            android:drawableLeft="@mipmap/dodo_num"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingBottom="@dimen/space_5"
+        android:background="@color/text_white"
+        android:paddingLeft="@dimen/space_20"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/ll_name_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_co_icon"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_businness"
+            android:drawablePadding="@dimen/space_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子商务"
+            android:textSize="@dimen/text_size_10"
+            android:drawableLeft="@mipmap/dodo_money"
+            />
+
+    </LinearLayout>
+
+       <RelativeLayout
+                android:id="@+id/rl_has_video"
+                android:layout_margin="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <cn.jzvd.JZVideoPlayerStandard
+                    android:layout_centerVertical="true"
+                    android:id="@+id/video_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="240dp" />
+
+           <ImageView
+               android:visibility="gone"
+               android:layout_width="match_parent"
+               android:layout_height="300dp"
+               android:scaleType="fitXY"
+               android:id="@+id/iv_introduce"
+               />
+
+
+                <ImageView
+                    android:visibility="gone"
+                    android:id="@+id/iv_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:src="@mipmap/group__8"
+                    />
+
+            </RelativeLayout>
+
+    <LinearLayout
+        android:background="@color/text_white"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/text_white"
+            app:tabTextColor="@color/text_black"
+            app:tabSelectedTextColor="@color/text_blue_new"
+            app:tabIndicatorColor="@color/text_blue_new"
+            app:tabTextAppearance="@style/text_white_15"
+            app:tabMode="fixed"
+            >
+
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="公司介绍"
+                />
+            <android.support.design.widget.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="招聘职位"
+                />
+
+        </android.support.design.widget.TabLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_divider_1"
+            android:background="@color/text_gray"/>
+
+        <com.youzheng.tongxiang.huntingjob.UI.Widget.CustomViewPager
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_page"
+            ></com.youzheng.tongxiang.huntingjob.UI.Widget.CustomViewPager>
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+</ScrollView>
+</LinearLayout>

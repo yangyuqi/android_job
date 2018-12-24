@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/text_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/invlude"
+        layout="@layout/header_layout"/>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_below="@+id/invlude"
+        android:padding="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已屏蔽公司"
+            android:textColor="@color/text_normal_gray"
+            android:textSize="@dimen/text_size_16"
+            />
+        <TextView
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="（共"
+            android:textColor="@color/text_normal_gray"
+            android:textSize="@dimen/text_size_15"
+            />
+        <TextView
+            android:id="@+id/tv_num"
+            android:layout_marginRight="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/text_normal_gray"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="个）"
+            android:textColor="@color/text_normal_gray"
+            android:textSize="@dimen/text_size_16"
+            />
+
+    </LinearLayout>
+
+    <ListView
+        android:listSelector="@android:color/transparent"
+        android:layout_above="@+id/rl"
+        android:layout_below="@+id/ll"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:dividerHeight="@dimen/space_divider_1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ls"
+        ></ListView>
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:background="@color/text_white"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_divider_1"
+            android:background="@color/text_gray"/>
+
+        <TextView
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_17"
+            android:gravity="center"
+            android:text="添加屏蔽公司"
+            android:background="@drawable/add_shield_bg"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginBottom="@dimen/space_5"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_marginRight="@dimen/space_10"
+            />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

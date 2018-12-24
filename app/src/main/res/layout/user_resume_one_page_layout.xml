@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/space_12"
+        android:background="@mipmap/beijing"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/space_30"
+            android:orientation="vertical"
+            android:paddingBottom="40dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_marginTop="@dimen/space_8"
+                android:drawableLeft="@mipmap/jibenziliao__qq"
+                android:drawablePadding="@dimen/space_5"
+                android:gravity="center_vertical"
+                android:text="基本资料"
+                android:textColor="@color/text_black"
+                android:textSize="@dimen/text_size_12" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_5"
+                android:src="@mipmap/xian__qq" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="姓名"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <EditText
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/edt_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint=""
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="出生日期"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <TextView
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/tv_brith"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/tv_riqi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/space_15"
+                        android:src="@mipmap/rili" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="性别"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp">
+
+                    <RadioGroup
+                        android:id="@+id/rg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/cb"
+                            android:layout_width="73dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/chose_female_bg"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:text="男"
+                            android:textColor="@drawable/chose_female_text_bg" />
+
+                        <RadioButton
+                            android:id="@+id/cb_woman"
+                            android:layout_width="73dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="35dp"
+                            android:layout_toRightOf="@+id/cb"
+                            android:background="@drawable/chose_female_bg"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="女"
+                            android:textColor="@drawable/chose_female_text_bg" />
+
+                    </RadioGroup>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="联系电话"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <EditText
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/edt_phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint=""
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="联系邮箱"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <EditText
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint=""
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="所在城市"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <TextView
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/tv_city"
+                        android:layout_toLeftOf="@+id/iv_city_address"
+                        android:gravity="start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/iv_city_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/space_15"
+                        android:src="@mipmap/sanjiao" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="状态"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <TextView
+                        android:gravity="start"
+                        android:layout_toLeftOf="@+id/iv_status"
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/tv_status"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/iv_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/space_15"
+                        android:src="@mipmap/sanjiao" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="期望职位"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <EditText
+                        android:paddingRight="@dimen/space_10"
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/edt_zhiwei"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint=""
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="期望月薪"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <TextView
+                        android:gravity="start"
+                        android:layout_toLeftOf="@+id/iv_money"
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/edt_money"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint=""
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/iv_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/space_15"
+                        android:src="@mipmap/sanjiao" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="期望地点"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <TextView
+                        android:layout_toLeftOf="@+id/iv_address"
+                        android:gravity="start"
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/edt_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint=""
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/iv_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/space_15"
+                        android:src="@mipmap/sanjiao" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="工作性质"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <TextView
+                        android:gravity="start"
+                        android:layout_toLeftOf="@+id/iv_nature"
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/tv_work_nature"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:background="@null"
+                        android:hint=""
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/iv_nature"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/space_15"
+                        android:src="@mipmap/sanjiao" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="行业"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <TextView
+                        android:gravity="start"
+                        android:layout_toLeftOf="@+id/iv_hangye"
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/tv_hangye"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/iv_hangye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/space_15"
+                        android:src="@mipmap/sanjiao" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="开始工作时间"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_10" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <TextView
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/tv_start_work"
+                        android:layout_toLeftOf="@+id/iv_start_work"
+                        android:gravity="start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/iv_start_work"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/space_15"
+                        android:src="@mipmap/sanjiao" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="学历"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="70dp"
+                    android:background="@drawable/user_info_bg">
+
+                    <TextView
+                        android:textColor="@color/text_normal_gray"
+                        android:id="@+id/tv_xueli"
+                        android:layout_toLeftOf="@+id/iv_city_xueli"
+                        android:gravity="start"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13" />
+
+                    <ImageView
+                        android:id="@+id/iv_city_xueli"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:padding="@dimen/space_15"
+                        android:src="@mipmap/sanjiao" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

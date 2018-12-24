@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/text_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/text_white"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/iv_select_icon"
+                android:layout_marginLeft="@dimen/space_7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/group_21_1"
+                />
+
+
+            <TextView
+                android:id="@+id/tv_collect_name"
+                android:text="人才"
+                android:textSize="@dimen/text_size_17"
+                android:textColor="@color/text_main_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_marginTop="@dimen/space_15"
+            android:id="@+id/tv_collect_num"
+            android:text="3人"
+            android:textSize="@dimen/text_size_13"
+            android:textColor="@color/text_gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            />
+
+        <GridView
+            android:gravity="center_vertical"
+            android:id="@+id/gv"
+            android:numColumns="4"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </GridView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,830 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/text_white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="企业LOGO"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <ImageView
+                    android:id="@+id/iv_name"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:src="@mipmap/do_select_icon"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="企业名称"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_name"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="企业简称"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_typr"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="企业性质"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:drawableRight="@mipmap/jiantouyou"
+                    android:id="@+id/edt_address"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="企业规模"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:drawableRight="@mipmap/jiantouyou"
+                    android:id="@+id/edt_short_num"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="所属地区"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:drawableRight="@mipmap/jiantouyou"
+                    android:id="@+id/edt_common_address"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="所属行业"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:drawableRight="@mipmap/jiantouyou"
+                    android:id="@+id/edt_play_type"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:paddingRight="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="注册资金"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <EditText
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:id="@+id/edt_regist_money"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:maxLength="10"
+                    android:inputType="number"
+                    android:layout_weight="2"
+                    android:text="万"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:paddingRight="@dimen/space_10"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="企业网址"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_net_address"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="企业福利"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:id="@+id/edt_co_userful"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_marginRight="@dimen/space_10"
+                    android:drawableRight="@mipmap/jiantouyou"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="企业简介"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_co_jianjie"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="企业介绍"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_co_intro"
+                    android:layout_weight="1"
+                    android:hint=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_15"
+                android:background="@color/bg_all"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="联系人"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_contact_name"
+                    android:layout_weight="1"
+                    android:hint="请填写联系人"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="35dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="联系电话"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_contact_phone"
+                    android:layout_weight="1"
+                    android:hint="请填写联系电话"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="联系邮箱"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <EditText
+                    android:id="@+id/edt_contact_email"
+                    android:layout_weight="1"
+                    android:hint="请填写联系邮箱"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_blue_new"
+                    android:text="*"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="企业地址"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:gravity="center_vertical"
+                    android:id="@+id/edt_contact_address"
+                    android:hint="请填写企业地址"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_13"
+                    />
+
+                <TextView
+                    android:layout_marginRight="@dimen/space_10"
+                    android:id="@+id/tv_select_address"
+                    android:inputType="number"
+                    android:gravity="center"
+                    android:text="去选择"
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/text_blue_new"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/text_size_13"
+                    />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_marginRight="@dimen/space_20"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_15"
+                android:background="@color/bg_all"/>
+
+
+            <LinearLayout
+                android:background="@color/white"
+                android:id="@+id/ll_add_video"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:paddingLeft="@dimen/space_20"
+                    android:layout_marginLeft="@dimen/space_3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_normal_gray"
+                    android:text="添加视频"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+                <TextView
+                    android:hint=""
+                    android:id="@+id/tv_add_video"
+                    android:layout_marginRight="@dimen/space_15"
+                    android:drawableRight="@mipmap/jiantouyou"
+                    android:gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:text=""
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_gravity="center_vertical"
+                    android:background="@null"
+                    android:textColor="@color/text_normal_gray"
+                    android:textSize="@dimen/text_size_16"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_margin="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <ImageView
+                android:id="@+id/iv_one"
+                android:scaleType="fitXY"
+                android:src="@mipmap/renshe1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp" />
+
+            <ImageView
+                android:id="@+id/iv_two"
+                android:layout_marginTop="@dimen/space_5"
+                android:scaleType="fitXY"
+                android:src="@mipmap/gongsibaodao1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp" />
+
+            <ImageView
+                android:id="@+id/iv_three"
+                android:layout_marginTop="@dimen/space_5"
+                android:scaleType="fitXY"
+                android:src="@mipmap/gaocengfangtan1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp" />
+            <ImageView
+                android:id="@+id/iv_four"
+                android:layout_marginTop="@dimen/space_5"
+                android:scaleType="fitXY"
+                android:src="@mipmap/zhichangjianghu1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp" />
+            <ImageView
+                android:id="@+id/iv_five"
+                android:layout_marginTop="@dimen/space_5"
+                android:scaleType="fitXY"
+                android:src="@mipmap/diaochabaogao1"
+                android:layout_width="match_parent"
+                android:layout_height="110dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_10"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

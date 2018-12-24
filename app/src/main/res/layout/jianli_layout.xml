@@ -1,0 +1,673 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+    <include layout="@layout/header_layout"/>
+    <ImageView
+        android:layout_marginTop="-13dp"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@mipmap/jianlibeijinghudu"
+        />
+    </LinearLayout>
+
+    <ScrollView
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingRight="@dimen/space_15"
+            android:paddingLeft="@dimen/space_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:background="@mipmap/groweup"
+                android:paddingBottom="@dimen/space_12"
+                android:paddingRight="@dimen/space_10"
+                android:paddingLeft="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.youzheng.tongxiang.huntingjob.UI.Widget.CircleImageView
+                    android:id="@+id/iv_co_icon"
+                    android:layout_centerVertical="true"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:src="@mipmap/morentouxiangnansheng"
+                    />
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/space_10"
+                    android:id="@+id/ll_name"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_toRightOf="@+id/iv_co_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_15"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_sex"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_size_11"
+                        />
+
+                    <View
+                        android:layout_marginBottom="@dimen/space_6"
+                        android:layout_marginTop="@dimen/space_6"
+                        android:layout_marginLeft="@dimen/space_15"
+                        android:layout_width="@dimen/space_1"
+                        android:layout_height="match_parent"
+                        android:background="@color/text_gray"/>
+
+                    <TextView
+                        android:id="@+id/tv_brith"
+                        android:layout_marginLeft="15dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_gray"
+                        android:textSize="@dimen/text_size_11"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_below="@+id/ll_name"
+                    android:layout_marginTop="@dimen/space_8"
+                    android:id="@+id/ll_id"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_toRightOf="@+id/iv_co_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_class"
+                        android:layout_gravity="center_vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_black"
+                        android:textSize="@dimen/text_size_14"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_name_2"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@+id/ll_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_co_icon"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:drawablePadding="@dimen/space_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/text_size_10"
+                        android:drawableLeft="@mipmap/dianhuua"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_ll"
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/ll_name_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_co_icon"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:drawablePadding="@dimen/space_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/text_size_10"
+                        android:drawableLeft="@mipmap/youxiang"
+                        />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_marginLeft="@dimen/space_20"
+                    android:layout_marginTop="3dp"
+                    android:layout_below="@+id/ll_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/iv_co_icon"
+                    android:orientation="horizontal"
+                    >
+
+                    <TextView
+                        android:id="@+id/tv_status"
+                        android:drawablePadding="@dimen/space_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="@dimen/text_size_10"
+                        android:drawableLeft="@mipmap/zhuangtai"
+                        />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@mipmap/groweup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_desc"
+                    android:padding="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textColor="@color/text_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="求职意向"
+                        android:drawableLeft="@mipmap/qiuzhiyixiang"
+                        />
+
+                    <ImageView
+                        android:paddingRight="@dimen/space_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/more_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginRight="@dimen/space_13"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider_1"
+                    android:background="@color/text_gray"/>
+
+                <RelativeLayout
+                    android:paddingBottom="@dimen/space_20"
+                    android:paddingTop="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                   <LinearLayout
+                       android:paddingLeft="@dimen/space_15"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:orientation="vertical"
+                       >
+
+                       <TextView
+                           android:id="@+id/tv_work_for"
+                           android:textSize="15sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/bg_origin"
+                           />
+
+                       <TextView
+                           android:id="@+id/tv_work_dus"
+                           android:textSize="11sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/text_gray"
+                           />
+
+                       <TextView
+                           android:layout_marginTop="@dimen/space_3"
+                           android:id="@+id/tv_work_place"
+                           android:textSize="11sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/text_gray"
+                           />
+
+                       <TextView
+                           android:layout_marginTop="@dimen/space_3"
+                           android:id="@+id/tv_work_money"
+                           android:textSize="11sp"
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:textColor="@color/text_gray"
+                           />
+
+
+                   </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@mipmap/groweup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_work"
+                    android:padding="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textColor="@color/text_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="工作经验"
+                        android:drawableLeft="@mipmap/gongzuojingyan"
+                        />
+
+                    <ImageView
+                        android:paddingRight="@dimen/space_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/more_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginRight="@dimen/space_13"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider_1"
+                    android:background="@color/text_gray"/>
+
+                <RelativeLayout
+                    android:paddingBottom="@dimen/space_15"
+                    android:paddingTop="@dimen/space_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingBottom="@dimen/space_3"
+                        android:paddingTop="@dimen/space_3"
+                        android:id="@+id/tv_experience"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textSize="@dimen/text_size_15"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尚未填写信息,完善信息可提高应聘几率~"
+                        android:textColor="@color/text_light_gray"
+                        android:drawableLeft="@mipmap/shangwei"
+                        />
+
+                    <com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView
+                        android:paddingBottom="@dimen/space_10"
+                        android:layout_marginLeft="@dimen/space_8"
+                        android:divider="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ls_experence"
+                        ></com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@mipmap/groweup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_jinyan"
+                    android:padding="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textColor="@color/text_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="项目经验"
+                        android:drawableLeft="@mipmap/xiangmujingyan2"
+                        />
+
+                    <ImageView
+                        android:paddingRight="@dimen/space_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/more_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginRight="@dimen/space_13"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider_1"
+                    android:background="@color/text_gray"/>
+
+                <RelativeLayout
+                    android:paddingBottom="@dimen/space_15"
+                    android:paddingTop="@dimen/space_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingBottom="@dimen/space_3"
+                        android:paddingTop="@dimen/space_3"
+                        android:id="@+id/tv_project"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textSize="@dimen/text_size_15"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尚未填写信息,完善信息可提高应聘几率~"
+                        android:textColor="@color/text_light_gray"
+                        android:drawableLeft="@mipmap/shangwei"
+                        />
+
+                    <com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView
+                        android:paddingBottom="@dimen/space_10"
+                        android:layout_marginLeft="@dimen/space_8"
+                        android:divider="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ls_project"
+                        ></com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@mipmap/groweup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_study"
+                    android:padding="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textColor="@color/text_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="教育经历"
+                        android:drawableLeft="@mipmap/jiaoyujingyan2"
+                        />
+
+                    <ImageView
+                        android:paddingRight="@dimen/space_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/more_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginRight="@dimen/space_13"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider_1"
+                    android:background="@color/text_gray"/>
+
+                <RelativeLayout
+                    android:paddingBottom="@dimen/space_15"
+                    android:paddingTop="@dimen/space_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:paddingBottom="@dimen/space_3"
+                        android:paddingTop="@dimen/space_3"
+                        android:id="@+id/tv_jiaoyue"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textSize="@dimen/text_size_15"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尚未填写信息,完善信息可提高应聘几率~"
+                        android:textColor="@color/text_light_gray"
+                        android:drawableLeft="@mipmap/shangwei"
+                        />
+
+                    <com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView
+                        android:paddingBottom="@dimen/space_10"
+                        android:layout_marginLeft="@dimen/space_8"
+                        android:divider="@null"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/ls_jiaoyue"
+                        ></com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@mipmap/groweup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_jineng"
+                    android:padding="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textColor="@color/text_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="技能评价"
+                        android:drawableLeft="@mipmap/jinengpingjia2"
+                        />
+
+                    <ImageView
+                        android:paddingRight="@dimen/space_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/more_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginRight="@dimen/space_13"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider_1"
+                    android:background="@color/text_gray"/>
+
+                <RelativeLayout
+                    android:paddingBottom="@dimen/space_15"
+                    android:paddingTop="@dimen/space_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_jineng"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textSize="@dimen/text_size_15"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尚未填写信息,完善信息可提高应聘几率~"
+                        android:textColor="@color/text_light_gray"
+                        android:drawableLeft="@mipmap/shangwei"
+                        />
+
+                    <com.donkingliang.labels.LabelsView
+                        android:paddingBottom="@dimen/space_10"
+                        android:layout_marginRight="@dimen/space_10"
+                        android:layout_marginLeft="@dimen/space_13"
+                        android:id="@+id/labelView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:labelBackground="@drawable/label_bg_gray"
+                        app:labelTextColor="@color/text_gray"
+                        app:labelTextSize="11sp"
+                        app:labelTextPaddingBottom="5dp"
+                        app:labelTextPaddingLeft="10dp"
+                        app:labelTextPaddingRight="10dp"
+                        app:labelTextPaddingTop="5dp"
+                        app:lineMargin="10dp"
+                        app:wordMargin="10dp"
+                        app:selectType="SINGLE"
+                        app:maxSelect="5"
+                        >
+
+                    </com.donkingliang.labels.LabelsView>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/space_10"
+                android:background="@mipmap/groweup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/rl_pingjia"
+                    android:padding="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textColor="@color/text_black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="自我评价"
+                        android:drawableLeft="@mipmap/ziwopingjia3"
+                        />
+
+                    <ImageView
+                        android:paddingRight="@dimen/space_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/more_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_marginRight="@dimen/space_13"
+                    android:layout_marginLeft="@dimen/space_13"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider_1"
+                    android:background="@color/text_gray"/>
+
+                <RelativeLayout
+                    android:paddingBottom="@dimen/space_15"
+                    android:paddingTop="@dimen/space_15"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tv_desc"
+                        android:drawablePadding="@dimen/space_5"
+                        android:textSize="@dimen/text_size_15"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="尚未填写信息,完善信息可提高应聘几率~"
+                        android:textColor="@color/text_light_gray"
+                        android:drawableLeft="@mipmap/shangwei"
+                        />
+
+                    <TextView
+                        android:layout_marginLeft="@dimen/space_13"
+                        android:id="@+id/tv_desc_desc"
+                        android:textSize="@dimen/text_size_12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/text_gray"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

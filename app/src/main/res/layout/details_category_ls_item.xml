@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="@dimen/text_size_15"
+        android:textColor="@color/text_main_gray"
+        android:text="行业"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_10"
+        android:id="@+id/tv_name"
+        />
+
+    <com.donkingliang.labels.LabelsView
+        android:layout_marginTop="@dimen/space_5"
+        android:layout_marginRight="@dimen/space_10"
+        android:layout_marginLeft="@dimen/space_10"
+        android:id="@+id/labelView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:labelBackground="@drawable/label_shai_bg"
+        app:labelTextColor="@drawable/label_shai_text_color"
+        app:labelTextSize="13sp"
+        app:labelTextPaddingBottom="10dp"
+        app:labelTextPaddingLeft="12dp"
+        app:labelTextPaddingRight="12dp"
+        app:labelTextPaddingTop="10dp"
+        app:lineMargin="10dp"
+        app:wordMargin="10dp"
+        app:selectType="SINGLE"
+        app:maxSelect="5"
+        >
+
+
+    </com.donkingliang.labels.LabelsView>
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <RelativeLayout
+        android:padding="@dimen/space_10"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@mipmap/groweup"
+        >
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_co"
+            android:textSize="@dimen/text_size_15"
+            android:textColor="@color/text_main_gray"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_6"
+            android:layout_marginTop="@dimen/space_3"
+            android:layout_below="@+id/tv_co"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_experice"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_11"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_3"
+            android:id="@+id/tv_xueli"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_11"
+            android:layout_toRightOf="@+id/tv_experice"
+            android:layout_marginTop="@dimen/space_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_co"
+            />
+
+        <TextView
+        android:text="编辑"
+        android:textColor="#00ACF7"
+        android:id="@+id/tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/space_10"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/text_size_13"
+        />
+
+        <TextView
+            android:text="删除"
+            android:textColor="#00ACF7"
+            android:id="@+id/tv_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_10"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/tv_edit"
+            android:textSize="@dimen/text_size_13"
+            />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_8"/>
+
+</LinearLayout>

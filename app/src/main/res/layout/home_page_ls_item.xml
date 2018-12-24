@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/text_white"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:background="@color/text_white"
+        >
+        <com.youzheng.tongxiang.huntingjob.UI.Widget.CircleImageView
+            android:id="@+id/iv_logo"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingTop="@dimen/space_15"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_toRightOf="@+id/iv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="软件测试工程师"
+                    android:textColor="@color/text_main_gray"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_name"
+                    android:src="@mipmap/zzz_get_video"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:id="@+id/iv_has_vodeo"
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:textColor="@color/origin_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2K--4K"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_level_l"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_gray"
+                    android:text="本科/上海"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginTop="@dimen/space_5"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_gray"/>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/tv_name_co"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:text="浙江优正"
+                    android:textColor="@color/text_gray"
+                    />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:layout_toLeftOf="@+id/tv_update_time"
+                    android:paddingRight="@dimen/space_5"
+                    android:singleLine="true"
+                    android:id="@+id/tv_below"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_gray"
+                    android:text="电子商务/软件开发"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_co"
+                    android:layout_marginTop="@dimen/space_5"
+                    />
+
+                <com.donkingliang.labels.LabelsView
+                    android:layout_below="@+id/tv_name_co"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:id="@+id/labelView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:labelBackground="@drawable/label_bg4"
+                    app:labelTextColor="@color/text_gray"
+                    app:labelTextSize="10sp"
+                    app:lineMargin="10dp"
+                    app:wordMargin="10dp"
+                    app:selectType="MULTI"
+                    app:maxSelect="2"
+                    app:labelTextPaddingBottom="2dp"
+                    app:labelTextPaddingLeft="4dp"
+                    app:labelTextPaddingRight="4dp"
+                    app:labelTextPaddingTop="2dp"
+                    android:layout_toLeftOf="@+id/tv_update_time"
+                    >
+
+                </com.donkingliang.labels.LabelsView>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="@dimen/space_30"
+                    android:textSize="@dimen/text_size_11"
+                    android:textColor="@color/text_gray"
+                    android:paddingBottom="@dimen/space_3"
+                    android:id="@+id/tv_update_time"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+    <View
+        android:background="@color/bg_all"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_8"/>
+
+</LinearLayout>

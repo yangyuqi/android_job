@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/text_white"
+        android:layout_width="match_parent"
+        android:layout_height="230dp">
+
+        <TextView
+            android:textColor="#4A90E2"
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/space_5"
+            android:paddingBottom="@dimen/space_5"
+            android:gravity="end"
+            android:text="发布中"
+            android:textSize="@dimen/text_size_15"
+            android:paddingRight="@dimen/space_20"
+            />
+
+        <RelativeLayout
+            android:layout_marginRight="@dimen/space_10"
+            android:layout_marginLeft="@dimen/space_10"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@mipmap/groweup"
+            >
+            <com.youzheng.tongxiang.huntingjob.UI.Widget.CircleImageView
+                android:id="@+id/iv_logo"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/space_15"
+                android:paddingTop="@dimen/space_15"
+                android:layout_marginLeft="@dimen/space_25"
+                android:layout_toRightOf="@+id/iv_logo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_15"
+                        android:text="软件测试工程师"
+                        android:textColor="@color/text_main_gray"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_money"
+                        android:layout_marginRight="@dimen/space_20"
+                        android:textColor="@color/text_red"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="2K--4K"
+                        />
+
+                    <TextView
+                        android:id="@+id/tv_level_l"
+                        android:textSize="@dimen/text_size_12"
+                        android:textColor="@color/text_gray"
+                        android:text="本科/上海"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name"
+                        android:layout_marginTop="@dimen/space_5"
+                        />
+
+                </RelativeLayout>
+                <View
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_marginRight="@dimen/space_30"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider_1"
+                    android:background="@color/text_gray"/>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    >
+                    <TextView
+                        android:id="@+id/tv_name_co"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_14"
+                        android:text="浙江优正"
+                        android:textColor="@color/text_main_gray"
+                        />
+
+
+                    <TextView
+                        android:id="@+id/tv_below"
+                        android:textSize="@dimen/text_size_11"
+                        android:textColor="@color/text_gray"
+                        android:text="电子商务/软件开发"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name_co"
+                        android:layout_marginTop="@dimen/space_5"
+                        />
+
+                    <TextView
+                        android:layout_marginRight="@dimen/space_15"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/tv_time"
+                        android:textSize="@dimen/text_size_11"
+                        android:textColor="@color/text_gray"
+                        android:text="1小时前"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_name_co"
+                        android:layout_marginTop="@dimen/space_5"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <LinearLayout
+                android:paddingRight="@dimen/space_15"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentRight="true"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/rl_edit"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/zhiwei_item_bg"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    >
+
+                        <TextView
+                            android:layout_centerInParent="true"
+                            android:textSize="@dimen/text_size_12"
+                            android:drawablePadding="@dimen/space_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="修改"
+                            android:textColor="@color/text_red"
+                            />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_match"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/zhiwei_item_bg"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    >
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/text_size_12"
+                        android:drawablePadding="@dimen/space_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="匹配"
+                        android:textColor="@color/text_red"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_redo"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/zhiwei_item_bg"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    >
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:textSize="@dimen/text_size_12"
+                        android:drawablePadding="@dimen/space_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="撤销"
+                        android:textColor="@color/text_red"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_shoucan"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/zhiwei_item_bg"
+                    android:layout_width="50dp"
+                    android:layout_height="25dp"
+                    >
+
+                    <TextView
+                        android:layout_centerInParent="true"
+                        android:id="@+id/tv_collect"
+                        android:layout_marginLeft="@dimen/space_5"
+                        android:textSize="@dimen/text_size_12"
+                        android:drawablePadding="@dimen/space_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="已入职"
+                        android:textColor="@color/text_red"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_10"
+            android:background="@color/bg_all"/>
+
+    </LinearLayout>
+
+</LinearLayout>

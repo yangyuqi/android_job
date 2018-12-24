@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <RelativeLayout
+        android:background="@color/text_white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="想说的话"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_15"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/text_normal_gray"
+            />
+
+        <EditText
+            android:background="@null"
+            android:layout_toRightOf="@+id/text"
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/space_15"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/text_gray"
+            />
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_divider_1"
+        android:background="@color/text_gray"/>
+
+    <LinearLayout
+        android:background="@color/white"
+        android:id="@+id/ll_add_video"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <TextView
+            android:paddingLeft="@dimen/space_15"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal_gray"
+            android:text="添加视频封面"
+            android:textSize="@dimen/text_size_16"
+            />
+
+        <TextView
+            android:hint=""
+            android:id="@+id/tv_add_video"
+            android:layout_marginRight="@dimen/space_15"
+            android:drawableRight="@mipmap/jiantouyou"
+            android:gravity="center_vertical"
+            android:layout_weight="1"
+            android:text=""
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:textColor="@color/text_normal_gray"
+            android:textSize="@dimen/text_size_16"
+            />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_divider_1"
+        android:background="@color/text_gray"/>
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:id="@+id/iv_image"
+        android:layout_margin="@dimen/space_15"
+        />
+
+</LinearLayout>

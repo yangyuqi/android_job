@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioButton
+    xmlns:android="http://schemas.android.com/apk/res/android"
+        android:drawablePadding="@dimen/space_20"
+        android:drawableLeft="@drawable/drawable_category_item"
+        android:textColor="@drawable/category_text_color2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/category_bg_item"
+        android:button="@null"
+        android:textSize="@dimen/text_size_14"
+        android:id="@+id/foot_bar_home"
+        android:text="首页" >
+
+</RadioButton>

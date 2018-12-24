@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="@color/text_white"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:visibility="gone"
+            android:paddingLeft="@dimen/space_15"
+            android:layout_centerVertical="true"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_15"
+            android:layout_height="wrap_content"
+            android:text="全部来源"
+            android:id="@+id/cb"
+            android:textColor="@drawable/text_gray_blue"
+            />
+
+
+        <CheckBox
+            android:paddingLeft="@dimen/space_10"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/group_19_1"
+            android:button="@null"
+            android:layout_marginRight="@dimen/space_15"
+            android:layout_width="match_parent"
+            android:textSize="@dimen/text_size_15"
+            android:layout_height="wrap_content"
+            android:text="全部来源"
+            android:id="@+id/iv_jiantou"
+            android:textColor="@drawable/text_gray_blue"
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

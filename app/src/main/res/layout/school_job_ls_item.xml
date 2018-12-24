@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/text_white"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp">
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="3dp"
+                android:layout_height="@dimen/space_13"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:background="#ED2A2E" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_toRightOf="@+id/view"
+                android:text="实习生专区"
+                android:textColor="#555555"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="@dimen/space_10"
+                android:text=">>"
+                android:textColor="#9A9A9A" />
+
+        </RelativeLayout>
+
+        <com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView
+            android:background="@color/text_white"
+            android:divider="@null"
+            android:id="@+id/ls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"></com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView>
+
+    </LinearLayout>
+
+</LinearLayout>

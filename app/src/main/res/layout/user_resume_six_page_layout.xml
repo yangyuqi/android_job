@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <ScrollView
+        android:background="@mipmap/beijing"
+        android:layout_margin="@dimen/space_15"
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingBottom="@dimen/space_15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginTop="@dimen/space_8"
+                android:layout_marginLeft="@dimen/space_15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自我评价"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/text_black"
+                android:drawableLeft="@mipmap/ziwopingjia__qq"
+                android:gravity="center_vertical"
+                android:drawablePadding="@dimen/space_5"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_10"
+                android:layout_marginTop="@dimen/space_5"
+                android:src="@mipmap/xian__qq"
+                />
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginLeft="@dimen/space_20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_12"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="自我评价"
+                    />
+
+                <RelativeLayout
+                    android:background="@drawable/user_info_bg"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp">
+
+                    <EditText
+                        android:textColor="@color/text_normal_gray"
+                        android:paddingTop="@dimen/space_10"
+                        android:id="@+id/edt_des"
+                        android:paddingLeft="@dimen/space_10"
+                        android:textSize="@dimen/text_size_13"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="填写个人描述"
+                        />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/header_layout"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.youzheng.tongxiang.huntingjob.UI.Widget.ViewPagerSlide
+            android:id="@+id/vp_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/ll"></com.youzheng.tongxiang.huntingjob.UI.Widget.ViewPagerSlide>
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/space_30"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/view_one"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/space_5"
+                android:src="@mipmap/no01" />
+
+            <ImageView
+                android:scaleType="fitXY"
+                android:id="@+id/view_two"
+                android:layout_width="20dp"
+                android:layout_height="@dimen/space_5"
+                android:layout_marginLeft="@dimen/space_15"
+                android:src="@mipmap/no02" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

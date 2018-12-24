@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_above="@+id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ls"
+            ></ListView>
+
+        <LinearLayout
+            android:background="@color/text_white"
+            android:id="@+id/ll"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_light_gray"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:id="@+id/rl_reback"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:textColor="@color/text_main_gray"
+                        android:textSize="@dimen/text_size_14"
+                        android:drawablePadding="@dimen/space_10"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我的反馈"
+                        android:drawableLeft="@mipmap/bb_reback"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_reback1"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:textColor="@color/text_main_gray"
+                        android:textSize="@dimen/text_size_14"
+                        android:drawablePadding="@dimen/space_10"
+                        android:layout_centerInParent="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="我要反馈"
+                        android:drawableLeft="@mipmap/bb_write"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

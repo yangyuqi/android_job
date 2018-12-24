@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <RelativeLayout
+        android:id="@+id/rl_top1"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="@drawable/main_color">
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:visibility="invisible"
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/space_15"
+            android:clickable="true"
+            android:src="@mipmap/fanhui"
+            />
+
+        <CheckBox
+            android:button="@null"
+            android:paddingRight="@dimen/space_20"
+            android:paddingLeft="@dimen/space_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textHeadTitle"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="Smart"
+            android:drawablePadding="@dimen/space_5"
+            android:drawableRight="@mipmap/group_14_1"
+            android:textColor="@color/text_white"
+            android:textSize="@dimen/text_size_17" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_top2"
+        android:layout_below="@+id/rl_top1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+
+    <android.support.design.widget.TabLayout
+        android:visibility="gone"
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/text_white"
+        app:tabTextColor="@color/text_gray"
+        app:tabSelectedTextColor="@color/text_red"
+        app:tabIndicatorColor="@color/text_red"
+        app:tabTextAppearance="@style/text_white_11"
+        app:tabMode="fixed"
+        >
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="未处理"
+            />
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="通知面试"
+            />
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不合适"
+            />
+
+    </android.support.design.widget.TabLayout>
+
+      <LinearLayout
+            android:background="@color/text_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            >
+            <RelativeLayout
+                android:id="@+id/rl_source_one"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <CheckBox
+                    android:layout_centerInParent="true"
+                    android:text="全部来源"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/source_iv_bg"
+                    android:button="@null"
+                    android:textSize="@dimen/text_size_14"
+                    android:drawablePadding="@dimen/space_4"
+                    android:textColor="@drawable/text_gray_blue"
+                    />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_marginBottom="@dimen/space_2"
+                android:layout_marginTop="@dimen/space_2"
+                android:layout_width="@dimen/space_divider_2"
+                android:layout_height="match_parent"
+                android:background="@color/bg_all"/>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <CheckBox
+                    android:layout_centerInParent="true"
+                    android:text="全部状态"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/cb2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/source_iv_bg"
+                    android:button="@null"
+                    android:textSize="@dimen/text_size_14"
+                    android:drawablePadding="@dimen/space_4"
+                    android:textColor="@drawable/text_gray_blue"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+</RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/rl_top2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.liaoinstan.springview.widget.SpringView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:type="follow"
+            android:id="@+id/sv"
+            app:footer="@layout/default_footer"
+            app:header="@layout/default_header"
+            >
+
+            <ListView
+                android:scrollbars="none"
+                android:overScrollMode="never"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:id="@+id/ls"
+                ></ListView>
+        </com.liaoinstan.springview.widget.SpringView>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/rl_show"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/ll_v"
+                android:background="@color/text_white"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/space_divider_1"
+                    android:background="@color/text_gray"/>
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ls_one"
+                    android:dividerHeight="@dimen/space_divider_2"
+                    android:divider="@color/text_light_gray"
+                    ></ListView>
+
+            </LinearLayout>
+            <View
+                android:layout_below="@+id/ll_v"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/text_normal_gray"
+                android:alpha="0.7"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+     <RelativeLayout
+         android:id="@+id/rl_top3"
+         android:visibility="gone"
+         android:layout_below="@+id/rl_top1"
+         android:background="@color/text_white"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical"
+         >
+     <ListView
+         android:id="@+id/ls_job"
+         android:layout_width="match_parent"
+         android:layout_height="300dp"></ListView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+</RelativeLayout>

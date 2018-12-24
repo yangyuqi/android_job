@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        >
+        <com.youzheng.tongxiang.huntingjob.UI.Widget.CircleImageView
+            android:layout_width="68dp"
+            android:layout_height="68dp"
+            android:id="@+id/civ"
+            android:src="@mipmap/gggggroup"
+            android:layout_centerInParent="true"
+            />
+
+
+        <ImageView
+            android:paddingRight="@dimen/space_10"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/space_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/iv_sex"
+            android:src="@mipmap/group_25_nan"
+            android:layout_below="@+id/civ"
+            />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_normal_gray"
+            android:textSize="@dimen/text_size_14"
+            android:layout_below="@+id/civ"
+            android:layout_marginTop="@dimen/space_30"
+            android:id="@+id/tv_name"
+            />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

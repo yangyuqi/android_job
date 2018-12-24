@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView
+        android:layout_marginTop="@dimen/space_5"
+        android:divider="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ls"
+        android:overScrollMode="never"
+        ></com.youzheng.tongxiang.huntingjob.UI.Widget.NoScrollListView>
+
+</LinearLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="wrap_content"
+            android:layout_height="135dp">
+        <ImageView
+            android:id="@+id/iv_logo"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/zhaoshangyinhang"
+            />
+    </RelativeLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/space_15"
+            android:paddingTop="@dimen/space_15"
+            android:layout_marginLeft="@dimen/space_25"
+            android:layout_toRightOf="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="135dp">
+
+            <RelativeLayout
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_16"
+                    android:text="软件测试工程师"
+                    android:textColor="@color/text_main_gray"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_money"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:textColor="@color/origin_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="2K--4K"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_class"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_gray"
+                    android:text="本科/上海"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name"
+                    android:layout_marginTop="@dimen/space_3"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_marginRight="@dimen/space_30"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/space_divider_1"
+                android:background="@color/text_gray"/>
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/space_10"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:id="@+id/tv_name_co"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size_13"
+                    android:text="浙江优正"
+                    android:textColor="@color/text_gray"
+                    />
+
+
+                <TextView
+                    android:visibility="gone"
+                    android:singleLine="true"
+                    android:gravity="start"
+                    android:layout_toLeftOf="@+id/tv_time"
+                    android:id="@+id/tv_below"
+                    android:textSize="@dimen/text_size_13"
+                    android:textColor="@color/text_gray"
+                    android:text="电子商务/软件开发"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_name_co"
+                    android:layout_marginTop="@dimen/space_5"
+                    />
+
+                <com.donkingliang.labels.LabelsView
+                    android:layout_below="@+id/tv_name_co"
+                    android:layout_marginTop="@dimen/space_5"
+                    android:id="@+id/labelView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:labelBackground="@drawable/label_bg4"
+                    app:labelTextColor="@color/text_gray"
+                    app:labelTextSize="10sp"
+                    app:lineMargin="10dp"
+                    app:wordMargin="10dp"
+                    app:selectType="MULTI"
+                    app:maxSelect="8"
+                    app:labelTextPaddingBottom="2dp"
+                    app:labelTextPaddingLeft="3dp"
+                    app:labelTextPaddingRight="3dp"
+                    app:labelTextPaddingTop="2dp"
+                    android:layout_toLeftOf="@+id/tv_time"
+                    >
+
+                </com.donkingliang.labels.LabelsView>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/space_5"
+                    android:id="@+id/tv_time"
+                    android:layout_marginBottom="@dimen/space_4"
+                    android:layout_marginRight="@dimen/space_20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="2小时"
+                    android:textSize="@dimen/text_size_11"
+                    android:textColor="@color/text_gray"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        
+        <LinearLayout
+            android:layout_marginBottom="@dimen/space_4"
+            android:layout_marginRight="@dimen/space_4"
+            android:layout_marginLeft="@dimen/space_4"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <TextView
+                android:id="@+id/tv_tou"
+                android:textColor="@color/text_white"
+                android:gravity="center"
+                android:text="投递简历"
+                android:background="@mipmap/toudi1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:id="@+id/tv_un_scribe"
+                android:textColor="@color/text_gray"
+                android:text="取消收藏"
+                android:gravity="center"
+                android:background="@mipmap/quxiao1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_8"/>
+
+</LinearLayout>

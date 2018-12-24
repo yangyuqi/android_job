@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/bg_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <LinearLayout
+        android:id="@+id/ll_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/space_10"
+        android:paddingLeft="@dimen/space_15"
+        android:textSize="@dimen/text_size_16"
+        android:textColor="@color/text_main_gray"
+        android:id="@+id/tv_title"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/space_8"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/space_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_light_gray"
+            android:textSize="@dimen/text_size_11"
+            android:id="@+id/tv_time"
+            />
+
+        <TextView
+            android:layout_marginLeft="@dimen/space_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_light_gray"
+            android:textSize="@dimen/text_size_11"
+            android:id="@+id/tv_num"
+            />
+
+    </LinearLayout>
+</LinearLayout>
+
+    <WebView
+        android:layout_marginTop="@dimen/space_10"
+        android:id="@+id/ls_details"
+        android:layout_below="@+id/view_ff"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></WebView>
+
+</LinearLayout>

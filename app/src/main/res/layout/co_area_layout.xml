@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@mipmap/group77"
+        >
+        <TextView
+            android:id="@+id/tv"
+            android:paddingTop="@dimen/space_10"
+            android:paddingLeft="@dimen/space_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_main_gray"
+            android:textSize="@dimen/text_size_15"
+            android:text="工作地址"
+            />
+
+        <TextView
+            android:layout_marginTop="@dimen/space_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv"
+            android:paddingLeft="@dimen/space_10"
+            android:textSize="@dimen/text_size_12"
+            android:textColor="@color/text_normal_gray"
+            android:id="@+id/tv_address"
+            />
+
+        <com.youzheng.tongxiang.huntingjob.UI.Widget.MyImageView
+            android:id="@+id/iv_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/dodo_telphone"
+            android:padding="@dimen/space_10"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

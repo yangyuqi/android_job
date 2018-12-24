@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_30"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始工作时间"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_13"
+            />
+
+        <RelativeLayout
+            android:background="@drawable/user_info_bg"
+            android:layout_marginLeft="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textColor="@color/text_normal_gray"
+                android:id="@+id/tv_time_time"
+                android:paddingLeft="@dimen/space_10"
+                android:textSize="@dimen/text_size_13"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+
+            <ImageView
+                android:id="@+id/iv_select_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/space_15"
+                android:src="@mipmap/rili" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_12"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号码"
+            />
+
+        <RelativeLayout
+            android:background="@drawable/user_info_bg"
+            android:layout_marginLeft="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:textColor="@color/text_normal_gray"
+                android:inputType="number"
+                android:maxLength="11"
+                android:id="@+id/edt_phone"
+                android:paddingLeft="@dimen/space_10"
+                android:textSize="@dimen/text_size_13"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/space_15"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <TextView
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_12"
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子邮箱"
+            />
+
+        <RelativeLayout
+            android:background="@drawable/user_info_bg"
+            android:layout_marginLeft="90dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:textColor="@color/text_normal_gray"
+                android:id="@+id/edt_email"
+                android:paddingLeft="@dimen/space_10"
+                android:textSize="@dimen/text_size_13"
+                android:layout_centerVertical="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:hint=""
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="所在城市"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_12" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/user_info_bg">
+
+            <TextView
+                android:textColor="@color/text_normal_gray"
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/space_10"
+                android:textSize="@dimen/text_size_13" />
+
+            <ImageView
+                android:id="@+id/iv_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/space_15"
+                android:src="@mipmap/sanjiao" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="@dimen/space_20"
+        android:layout_marginRight="@dimen/space_20"
+        android:layout_marginTop="@dimen/space_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="行业"
+            android:textColor="@color/text_gray"
+            android:textSize="@dimen/text_size_12" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="90dp"
+            android:background="@drawable/user_info_bg">
+
+            <TextView
+                android:textColor="@color/text_normal_gray"
+                android:id="@+id/tv_hangye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:paddingLeft="@dimen/space_10"
+                android:textSize="@dimen/text_size_13" />
+
+            <ImageView
+                android:id="@+id/iv_hangye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/space_15"
+                android:src="@mipmap/sanjiao" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/rl4"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/text_blue_new"
+        android:scaleType="fitXY"
+        android:text="完成"
+        android:textColor="@color/text_white"
+        android:textSize="@dimen/text_size_16" />
+
+</LinearLayout>

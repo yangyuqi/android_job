@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:paddingRight="@dimen/space_20"
+            android:paddingLeft="@dimen/space_20"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            >
+
+            <TextView
+                android:layout_centerVertical="true"
+                android:id="@+id/tv_school_speak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="高校洽谈会"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/text_normal_gray"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/tv_school_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_normal_gray"
+                android:layout_below="@+id/tv_school_speak"
+                android:layout_marginTop="@dimen/space_5"
+                android:textSize="@dimen/text_size_12"
+                android:text="苏州大学"
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="未开始"
+                android:textSize="@dimen/text_size_11"
+                android:textColor="@color/text_red"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp">
+
+
+        <View
+            android:visibility="gone"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_divider_1"
+            android:background="@color/text_gray"/>
+
+
+        <ImageView
+            android:id="@+id/iv_speak"
+            android:scaleType="fitXY"
+            android:src="@mipmap/about_us_123"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_width="match_parent"
+            android:layout_height="160dp" />
+
+            <RelativeLayout
+                android:layout_marginRight="@dimen/space_20"
+                android:layout_marginLeft="@dimen/space_20"
+                android:alpha="0.3"
+                android:background="@color/text_gray"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/space_20"
+                android:paddingRight="@dimen/space_20"
+                android:paddingTop="@dimen/space_10">
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_school_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="高校洽谈会"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:singleLine="true"
+                    android:layout_marginLeft="@dimen/space_10"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/tv_school_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tv_school_address"
+                    android:text="苏州大学"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:visibility="gone"
+                    android:id="@+id/tv_data"
+                    android:paddingBottom="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="2小时前"
+                    android:textColor="@color/text_gray"
+                    android:textSize="@dimen/text_size_10" />
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <View
+            android:layout_marginTop="@dimen/space_5"
+            android:layout_marginRight="@dimen/space_20"
+            android:layout_marginLeft="@dimen/space_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_divider_1"
+            android:background="@color/text_light_gray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingLeft="@dimen/space_20"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看详情"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/text_size_15"
+                android:textColor="@color/text_normal_gray"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:src="@mipmap/jiantouyou"
+                android:paddingRight="@dimen/space_15"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_5"/>
+
+</LinearLayout>

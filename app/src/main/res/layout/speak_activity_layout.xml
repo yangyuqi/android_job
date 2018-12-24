@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg_all"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/header_layout"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/text_white"
+        app:tabTextColor="@color/text_black"
+        app:tabSelectedTextColor="@color/text_blue_new"
+        app:tabIndicatorColor="@color/text_blue_new"
+        app:tabTextAppearance="@style/text_white_15"
+        app:tabMode="fixed"
+        >
+
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还未开始"
+            />
+        <android.support.design.widget.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已结束"
+            />
+
+    </android.support.design.widget.TabLayout>
+
+    <ListView
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        android:layout_margin="@dimen/space_15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:id="@+id/ls"
+        ></ListView>
+
+</LinearLayout>
